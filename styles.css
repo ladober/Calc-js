@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: rgb(230, 166, 5);
+}
+
+#js-result{
+    text-align: end;
+    width: 396px;
+    height: 30px;
+    font-size: 23px;
+}
+
+.numbers-container {
+    max-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.numbers {
+    margin: 1px;
+    width: 60px;
+    height: 30px;
+}
