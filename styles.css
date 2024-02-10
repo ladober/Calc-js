@@ -9,21 +9,54 @@
     background-color: rgb(230, 166, 5);
 }
 
-#js-result{
+.js-screen{
     text-align: end;
-    width: 396px;
+    width: 397px;
     height: 30px;
     font-size: 23px;
+    background-color: white;
+    border: 1px solid;
 }
 
 .numbers-container {
     max-width: 200px;
     display: flex;
     flex-wrap: wrap;
+    max-height: 162px;
 }
 
 .numbers {
     margin: 1px;
     width: 60px;
     height: 30px;
+}
+
+.result {
+    margin: 1px;
+    width: 60px;
+    height: 30px;
+}
+
+.reset {
+    width: 60px;
+    height: 30px;
+    position: relative;
+    left: 190px;
+    bottom: 159px;
+}
+
+.percent {
+    width: 60px;
+    height: 30px;
+    position: relative;
+    left: 130px;
+    bottom: 127px;
+}
+
+.delete {
+    width: 60px;
+    height: 30px;
+    position: relative;
+    left: 70px;
+    bottom: 95px;
 }
