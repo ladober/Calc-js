@@ -3,19 +3,35 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Comic';
+    src: url(COMIC.TTF);
+}
+
+.calc {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'Comic';
+}
+
 .container {
+    border: 2px solid;
     margin: 20px auto;
-    max-width: 400px;
+    max-width: 261px;
     background-color: rgb(230, 166, 5);
+    height: 193px;
 }
 
 .js-screen{
     text-align: end;
-    width: 397px;
+    width: 261px;
     height: 30px;
     font-size: 23px;
     background-color: white;
-    border: 1px solid;
+    border-bottom: 2px solid;
 }
 
 .numbers-container {
@@ -26,37 +42,100 @@
 }
 
 .numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
     margin: 1px;
     width: 60px;
     height: 30px;
+    cursor: pointer;
+    font-size: 20px;
 }
 
-.result {
+.numbers:active {
+    border: 1px rgb(182, 181, 181) solid;
+}
+.multiply {
+    font-size: 30px;
+    padding-top: 14px;
+}
+
+.dot {
+    border-radius: 5px;
     margin: 1px;
     width: 60px;
     height: 30px;
+    cursor: pointer;
 }
 
 .reset {
+    border-radius: 5px;
     width: 60px;
     height: 30px;
     position: relative;
-    left: 190px;
+    left: 199px;
     bottom: 159px;
+    cursor: pointer;
+}
+
+.reset:active {
+    border: 1px rgb(182, 181, 181) solid;
 }
 
 .percent {
+    border-radius: 5px;
     width: 60px;
     height: 30px;
     position: relative;
-    left: 130px;
-    bottom: 127px;
+    left: 135px;
+    bottom: 128px;
+    cursor: pointer;
+}
+
+.percent:active {
+    border: 1px rgb(182, 181, 181) solid;
 }
 
 .delete {
+    border-radius: 5px;
     width: 60px;
     height: 30px;
     position: relative;
-    left: 70px;
-    bottom: 95px;
+    left: 71px;
+    bottom: 96px;
+    cursor: pointer;
+}
+
+.delete:active {
+    border: 1px rgb(182, 181, 181) solid;
+}
+
+.x2 {
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    position: relative;
+    left: 8px;
+    bottom: 64px;
+    cursor: pointer;
+}
+
+.x2:active {
+    border: 1px rgb(182, 181, 181) solid;
+}
+
+.result {
+    position: relative;
+    left: 199px;
+    bottom: 62px;
+    border-radius: 5px;
+    margin: 1px;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.result:active {
+    border: 1px rgb(182, 181, 181) solid;
 }
