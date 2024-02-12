@@ -27,6 +27,9 @@ reset.addEventListener("click", () => {
 });
 
 percent.addEventListener("click", () => {
+  if (calcSum.textContent === "") {
+    calcSum.textContent = "input number";
+  }
   calcSum.textContent = eval(calcSum.textContent) / 100;
 });
 
